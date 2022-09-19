@@ -15,21 +15,18 @@
 </head>
 <body>
 
-  <main class="container">
-        <picture class="illustration">
-          <source media="(min-width:375px)" srcset="./images/illustration-woman-online-mobile.svg">
-          <source media="(min-width:1080px" srcset="./images/illustration-woman-online-desktop.svg">
-          <img src="./images/illustration-woman-online-desktop.svg" alt="Woman interacting with a screen.">
-        </picture>
-        <picture class="shadow">
-          <source media="(min-width:375px)" srcset="file:///home/jenna/repos/faq-accordion-card-main/images/bg-pattern-mobile.svg">
-          <source media="(min-width:1080px)" srcset="file:///home/jenna/repos/faq-accordion-card-main/images/bg-pattern-desktop.svg">
-          <img src="./images/bg-pattern-mobile.svg" alt="Shadow of illustration.">
-        </picture>
+  <main class="card">
+    <section class="card-art">
+        <img class="illustration-desktop" src="./images/illustration-woman-online-desktop.svg" alt="Woman using desktop.">
+        <img class="illustration-mobile" src="./images/illustration-woman-online-mobile.svg" alt="Woman using desktop.">
+        <img class="box" src="./images/illustration-box-desktop.svg" alt="Box with @ symbol.">
+        <img class="shadow-desktop" src="./images/bg-pattern-desktop.svg" alt="Shadow.">
+        <img class="shadow-mobile" src="./images/bg-pattern-mobile.svg" alt="Shadow.">
+    </section>
 
-    <article class="content">
+    <article class="card-content">
       <h1>FAQ</h1>
-      <ul>
+      <ul class="accordion">
         <li>
           How many team members can I invite? <img src="./images/icon-arrow-down.svg"></img>
           <p class="dropdown-content">
