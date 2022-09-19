@@ -13,38 +13,55 @@ body {
     align-items: center;
 }
 
-.illustration {
-    position: absolute;
-    top: 7.5rem;
-}
-
-.shadow {
-    position: relative;
-    top: 9.5rem;
-}
-
-picture {
+.card {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    height: 32rem;
+    position: fixed;
 }
 
-img {
-    max-width: calc(100vw - 150px);
-}
-
-.container {
+.card-art {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
 }
 
-.content {
-    background-color: white;
-    padding: 10rem 1.5rem 3rem 1.5rem;
-    border-radius: 1.5rem;
+.illustration-mobile {
+    max-width: 14rem;
+    z-index: 1;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    max-width: 5rem;
+    top: -2rem;
+    left: 4rem;
+    z-index: 2;
+}
+
+.shadow-mobile {
+    max-width: 14rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.illustration-desktop,
+.shadow-desktop {
+    display: none;
+}
+
+.card-content {
+    padding: 2rem 1.5rem 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
