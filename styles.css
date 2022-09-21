@@ -76,7 +76,7 @@ ul {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 0;
     margin: 0;
     color: hsl(237, 12%, 33%)
@@ -84,10 +84,17 @@ ul {
 
 li {
     display: flex;
+    align-items: center;
+}
+
+.btn {
+    all: unset;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: none;
+    flex: 1;
 }
+
 
 li:hover {
     color: hsl(14, 88%, 65%);
@@ -107,7 +114,6 @@ hr.solid {
 
 p {
     display: none;
-
 }
 
 
